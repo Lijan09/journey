@@ -1,8 +1,61 @@
 body {
-    background-color: beige;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: #1E1C27;
+	color: white;
+	font-family: 'Geologica', sans-serif;
 }
 
-h1 {
-    color: palevioletred;
-    text-align: center;
+h1{
+    color:pink;
 }
+
+#rick{
+    color:white;
+	font-size: 3em;
+	
+	> span {
+		position: relative;
+		display: inline-block;
+		color: #FF3C41;
+		height: 1.25em;
+		vertical-align: bottom;
+		overflow: hidden;
+		
+		> span {
+			display: block;
+			animation-name: animateWords;
+			animation-duration: 7s;
+			animation-iteration-count: infinite;
+		}
+	}
+}
+
+
+@keyframes animateWords {
+	0% {
+		transform: translateY(0%);
+	}
+	
+	25% {
+		transform: translateY(-100%);
+	}
+	
+	50% {
+		transform: translateY(-200%);
+	}
+	
+	75% {
+		transform: translateY(-300%);
+	}
+	
+	100% {
+		transform: translateY(-400%);
+	}
+
+}
+

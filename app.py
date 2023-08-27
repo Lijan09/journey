@@ -11,4 +11,8 @@ def about():
     name = "Lijan"
     return render_template("about.html", name = name)
 
+@app.route("/rick")
+def rick():
+    return render_template("rick.html")
+
 app.run(debug=True)
